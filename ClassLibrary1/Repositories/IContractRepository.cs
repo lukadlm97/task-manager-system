@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Entities;
 
-namespace Domain
+namespace Domain.Repositories
 {
-    public class Status
+    public interface IContractRepository:IDomainRepository<Contract>
     {
-        public int ID { get; set; }
-        public int Name { get; set; }
     }
 }

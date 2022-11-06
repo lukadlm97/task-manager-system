@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Entities
 {
     public class ContractType
     {
-        public int ID { get; set; }
+        public int ContractTypeID { get; set; }
         public string Name { get; set; }
     }
 }

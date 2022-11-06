@@ -5,13 +5,14 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Entities
 {
     public class Company
     {
-        public int ID { get; set; }
+        public int CompanyID { get; set; }
         public string Name { get; set; }
-        public IEnumerable<Contract> Contracts { get; set; }
-        
+        public ICollection<Contract> Contracts { get; set; }
+        public ICollection<Project> Projects { get; set; }
+
     }
 }
